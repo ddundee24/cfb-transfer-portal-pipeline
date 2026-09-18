@@ -77,10 +77,9 @@ for year in years: ## for loop to grab the player data for all years wanted
         # Convert to PySpark DataFrame
         df = spark.createDataFrame(pdf)
         
-        # Add data tracking columns
+        # Add data extraction tracking columns
         df_transformed = (
             df \
-            .withColumn("season_year", lit(year)) ## lists year of season from extraction
             .withColumn("ingested_at", current_timestamp()) ## lists when data was last loaded into dataframe
         )
         # Append to the raw bronze table with mergeSchema enabled
