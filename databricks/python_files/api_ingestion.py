@@ -225,4 +225,4 @@ for year in years: ## for loop to grab the recruiting data for all years wanted
     else:
         print(f"Failed to fetch data for {year} [Status Code {response.status_code}]: {response.text}") ## error tracker for years and why to help in troubleshooting
 
-print(f"\nTotal rows ingested across 2020–2026: {total_ingested}") ## print out total rows across all years when successful
+print(f"\nTotal rows ingested across 2016–2026: {total_ingested}") ## print out total rows across all years when successful
