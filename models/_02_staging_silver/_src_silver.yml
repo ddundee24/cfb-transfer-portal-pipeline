@@ -1,6 +1,6 @@
 sources:
   - name: _01_raw_bronze
-    database: default
+    database: cfb_transfer_portal_pipeline
     schema: _01_raw_bronze
     tables:
       - name: player_usage

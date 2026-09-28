@@ -37,8 +37,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   cfb_transfer_portal_pipeline:
-    _01_raw_bronze:
-      +materialized: table
     _02_staging_silver:
       +materialized: view 
     _03_analytics_gold:
